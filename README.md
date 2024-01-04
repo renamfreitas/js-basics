@@ -12,9 +12,13 @@ Array manipulation is a common task in programming. Whether you are calculating 
 
 ## Instructions
 
----------
-TO BE CREATED
----------
+- Clone the repository (it contains only the readme).
+- Create a new branch from the master branch with your name in lowercase, without spaces, and without special characters.
+- Create an index.html file in the project's root directory.
+- Create a scripts.js file in the project's root directory.
+- Develop the functions and tests described below in the script.js file and execute the functions in the index.html file (with console logs where it makes sense).
+- Make a commit for each test executed.
+- Upon completing the exercise, push to the repository.
 
 
 <br>
