@@ -131,6 +131,11 @@ console.log(sum(mixedArr));
 const sumAverage = sumNumbers(numbers2) / numbers2.length;
 console.log(sumAverage);
 
+const resultSumAverage = sumAverage;
+document.getElementById(
+  "resultado5"
+).textContent = `4) A média é: ${resultSumAverage}`;
+
 /*-----------------------------------------------------------------*/
 /*Iteration 4.1: Array of numbers*/
 const numbers3 = [2, 6, 9, 10, 7, 4, 1, 9];
@@ -139,6 +144,10 @@ function averageNumbers(numbers3) {
   return sum / numbers3.length;
 }
 console.log(averageNumbers(numbers3));
+const resultAverageNumbers = averageNumbers(numbers3);
+document.getElementById(
+  "resultado6"
+).textContent = `4.1) A média dos números é: ${resultAverageNumbers}`;
 
 /*-----------------------------------------------------------------*/
 /*Iteration 4.2: Array of strings*/
@@ -172,6 +181,10 @@ console.log(averageWordLength(words2));
 const totalLength = words2.reduce((sum, words2) => sum + words2.length, 0);
 console.log(totalLength);
 
+document.getElementById(
+  "resultado7"
+).textContent = `4.2) A quantidade de caracteres é: ${totalLength}`;
+
 /*-----------------------------------------------------------------*/
 /*Bonus - Iteration 4.3: A generic avg() function*/
 const mixedArr2 = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
@@ -193,6 +206,11 @@ function avg(arr) {
   return totalSum / arr.length;
 }
 console.log(avg(mixedArr2));
+
+const resultAvg = avg(mixedArr2);
+document.getElementById(
+  "resultado8"
+).textContent = `4.3) A quantidade de caracteres mistos é: ${resultAvg}`;
 
 /*-----------------------------------------------------------------*/
 /*Iteration 5: Unique arrays*/
@@ -216,5 +234,64 @@ function uniquefyArray(words3) {
   );
   return uniqueArray;
 }
-
 console.log(uniquefyArray(words3));
+const resultUniqueFy = uniquefyArray(words3);
+document.getElementById(
+  "resultado9"
+).textContent = `5) Array sem duplicatas: ${resultUniqueFy}`;
+
+/*-----------------------------------------------------------------*/
+/*Iteration 6: Find elements*/
+const words4 = [
+  "machine",
+  "subset",
+  "trouble",
+  "starting",
+  "matter",
+  "eating",
+  "truth",
+  "disobedience",
+];
+
+function doesWordExist(wordArray, wordToFind) {
+  return wordArray.includes(wordToFind);
+}
+
+const findWord = "truth";
+console.log(doesWordExist(words4, findWord));
+
+const resultDoesWordExist = doesWordExist(words4, findWord);
+document.getElementById(
+  "resultado10"
+).textContent = `6) A pesquisa é: ${resultDoesWordExist}`;
+
+/*-----------------------------------------------------------------*/
+/*Iteration 7: Count repetition*/
+const words5 = [
+  "machine",
+  "matter",
+  "subset",
+  "trouble",
+  "starting",
+  "matter",
+  "eating",
+  "matter",
+  "truth",
+  "disobedience",
+  "matter",
+];
+
+function howManyTimes(wordArray2, wordToFind2) {
+  return wordArray2.reduce(
+    (count, word) => (word === wordToFind2 ? count + 1 : count),
+    0
+  );
+}
+
+const wordFind = "matter";
+console.log(howManyTimes(words5, wordFind));
+
+const resultWordFind = howManyTimes(words5, wordFind);
+document.getElementById(
+  "resultado11"
+).textContent = `7) A quantidade de repetições é: ${resultWordFind}`;
