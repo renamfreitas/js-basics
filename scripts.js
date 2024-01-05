@@ -1,4 +1,5 @@
 /*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 /*Iteration 1: Find the maximum*/
 const numbers = [45, 35 /*, 25, 48, 15, 113*/];
 
@@ -17,6 +18,7 @@ document.getElementById(
   "resultado1"
 ).textContent = `1) O maior número é: ${numbersResult}`;
 
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 /*Iteration 2: Find the longest word*/
 /*Utilizei a mesma ideia do exerc1, mas poderia usar o reduce*/
@@ -55,6 +57,7 @@ document.getElementById(
 ).textContent = `2) A maior string é: ${wordsResult}`;
 
 /*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 /*Iteration 3.1: Calculate the sum*/
 const numbers2 = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
@@ -79,6 +82,7 @@ document.getElementById(
   "resultado3"
 ).textContent = `3.1) A soma do array é: ${sumResult}`;
 
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 /*Iteration 3.2: A generic sum() function*/
 const mixedArr = [
@@ -127,6 +131,7 @@ try {
 console.log(sum(mixedArr));
 
 /*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 /*Iteration 4: Calculate the average*/
 const sumAverage = sumNumbers(numbers2) / numbers2.length;
 console.log(sumAverage);
@@ -136,6 +141,7 @@ document.getElementById(
   "resultado5"
 ).textContent = `4) A média é: ${resultSumAverage}`;
 
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 /*Iteration 4.1: Array of numbers*/
 const numbers3 = [2, 6, 9, 10, 7, 4, 1, 9];
@@ -149,6 +155,7 @@ document.getElementById(
   "resultado6"
 ).textContent = `4.1) A média dos números é: ${resultAverageNumbers}`;
 
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 /*Iteration 4.2: Array of strings*/
 const words2 = [
@@ -186,6 +193,7 @@ document.getElementById(
 ).textContent = `4.2) A quantidade de caracteres é: ${totalLength}`;
 
 /*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 /*Bonus - Iteration 4.3: A generic avg() function*/
 const mixedArr2 = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
 function avg(arr) {
@@ -212,6 +220,7 @@ document.getElementById(
   "resultado8"
 ).textContent = `4.3) A quantidade de caracteres mistos é: ${resultAvg}`;
 
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 /*Iteration 5: Unique arrays*/
 const words3 = [
@@ -241,6 +250,7 @@ document.getElementById(
 ).textContent = `5) Array sem duplicatas: ${resultUniqueFy}`;
 
 /*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 /*Iteration 6: Find elements*/
 const words4 = [
   "machine",
@@ -265,6 +275,7 @@ document.getElementById(
   "resultado10"
 ).textContent = `6) A pesquisa é: ${resultDoesWordExist}`;
 
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 /*Iteration 7: Count repetition*/
 const words5 = [
